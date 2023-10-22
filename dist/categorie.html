@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>HAMDSHOP</title>
+</head>
+<body>
+    <!----------------------------------------------header ----------------------------------------------------------------------------> 
+
+       <!-- component -->
+<header class="header sticky top-0 bg-white shadow-md flex items-center justify-between px-8 py-02">
+    <!-- logo -->
+    <h1 class="w-3/12">
+        <a href="">
+            <img src="../assets/logo.png" alt="Casmart logo" width="130" height="31">
+        </a>
+    </h1>
+
+
+    <!-- navigation -->
+    <nav class="nav font-semibold text-lg">
+        <ul class="flex items-center">
+            <li class="p-4 border-b-2 border-cyan-400 border-opacity-0 hover:border-opacity-100 hover:text-cyan-400 duration-200 cursor-pointer active">
+              <a href="index.html">Accueil</a>
+            </li>
+            <li class="p-4 border-b-2 border-cyan-400 border-opacity-0 hover:border-opacity-100 hover:text-cyan-400 duration-200 cursor-pointer">
+              <a href="categorie.html">Categories</a>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <!--SHEARCH --> 
+
+    <div class="w-3/12 flex justify-end">
+        <div class="flex items-center justify-center w-screen ">
+            <form method="GET">
+              <div class="relative text-black-950 focus-within:text-gray-400">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                  <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                  </button>
+                </span>
+                <input type="search" name="q" class="py-2 text-sm text-white bg-teal-600 	 rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search..." autocomplete="off">
+              </div>
+            </form>
+          </div>
+
+
+<!--USER ICON --> 
+
+        <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 stroke-teal-400	">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>                     
+             </a>
+
+        
+    </div>
+</header>
+
+<!-----------------------------------------------main ----------------------------------------------------------------------------> 
+
+    <main>
+        <div class="bg-teal-900 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl text-center	font-bold text-white mb-8">Choose Your Category</h2>
+
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 " id="product-grid">
+        <!-- Products will be inserted here -->
+    </div>
+ 
+        
+            </div>
+        </div>
+    </main>
+    <script src="categorieScript.js"></script>
+</body>
+</html>
